@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c7d8a014b02672dfa4a8af3bba6359f4 {
+                    position: relative;
+                    width: 900.0px;
+                    height: 500.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c7d8a014b02672dfa4a8af3bba6359f4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c7d8a014b02672dfa4a8af3bba6359f4 = L.map(
+                "map_c7d8a014b02672dfa4a8af3bba6359f4",
+                {
+                    center: [40.287564, -102.083884],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8a5ed5f61bac2873619a4e174562bd8e = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var tile_layer_88d6552f48db87e1d2e3c56a03af9d1a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var marker_5245cb4df278bea3690e76d850046396 = L.marker(
+                [33.75465100806, -84.400785036572],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_451501389f79876291f23b19b808f799 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5245cb4df278bea3690e76d850046396.setIcon(icon_451501389f79876291f23b19b808f799);
+        
+    
+        var popup_457920a67dfa135520162238550e59af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_989e9a5a095239392ef47eb88dd9984d = $(`<div id="html_989e9a5a095239392ef47eb88dd9984d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Mercedes-Benz Stadium<br><b>Address:</b> 1 Amb Dr Nw, Atlanta, Ga, 30313, Usa, Atlanta</div>`)[0];
+                popup_457920a67dfa135520162238550e59af.setContent(html_989e9a5a095239392ef47eb88dd9984d);
+            
+        
+
+        marker_5245cb4df278bea3690e76d850046396.bindPopup(popup_457920a67dfa135520162238550e59af)
+        ;
+
+        
+    
+    
+            marker_5245cb4df278bea3690e76d850046396.bindTooltip(
+                `<div>
+                     Mercedes-Benz Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_11d496d2c4dbc84571ffaccb7c211523 = L.marker(
+                [42.081688592248, -71.276170625946],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_b0ba78a785065c47ea14d03f2013ff3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_11d496d2c4dbc84571ffaccb7c211523.setIcon(icon_b0ba78a785065c47ea14d03f2013ff3b);
+        
+    
+        var popup_8f5e368657d5449234a4f66d324a699b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9e6484d026f4838ac95f977d8e914341 = $(`<div id="html_9e6484d026f4838ac95f977d8e914341" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Gillette Stadium<br><b>Address:</b> 1 Patriot Place, Foxboro, Ma, 02035, Usa, Foxborough</div>`)[0];
+                popup_8f5e368657d5449234a4f66d324a699b.setContent(html_9e6484d026f4838ac95f977d8e914341);
+            
+        
+
+        marker_11d496d2c4dbc84571ffaccb7c211523.bindPopup(popup_8f5e368657d5449234a4f66d324a699b)
+        ;
+
+        
+    
+    
+            marker_11d496d2c4dbc84571ffaccb7c211523.bindTooltip(
+                `<div>
+                     Gillette Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2cb3f6e0cdcf2aee79ee2be55cc1d73c = L.marker(
+                [32.74771600624, -97.093034981328],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_4e6e796ea3045ed1f7b6d7fd7cf3a5d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2cb3f6e0cdcf2aee79ee2be55cc1d73c.setIcon(icon_4e6e796ea3045ed1f7b6d7fd7cf3a5d5);
+        
+    
+        var popup_2543c49ebd20379cd8b28746d2a03570 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_474f0cf180e101ec9e946ac388cbeb9f = $(`<div id="html_474f0cf180e101ec9e946ac388cbeb9f" style="width: 100.0%; height: 100.0%;"><b>Name:</b> AT&T Stadium<br><b>Address:</b> 1 At T Way, Arlington, Tx, 76011, Usa, Arlington</div>`)[0];
+                popup_2543c49ebd20379cd8b28746d2a03570.setContent(html_474f0cf180e101ec9e946ac388cbeb9f);
+            
+        
+
+        marker_2cb3f6e0cdcf2aee79ee2be55cc1d73c.bindPopup(popup_2543c49ebd20379cd8b28746d2a03570)
+        ;
+
+        
+    
+    
+            marker_2cb3f6e0cdcf2aee79ee2be55cc1d73c.bindTooltip(
+                `<div>
+                     AT&T Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1137f7d52decf756d48eab093b88d0f6 = L.marker(
+                [29.683273947951, -95.407928765785],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_1e545b72785455d24f57a65dbdec2594 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1137f7d52decf756d48eab093b88d0f6.setIcon(icon_1e545b72785455d24f57a65dbdec2594);
+        
+    
+        var popup_e5960f1638cb50c1bc69b7901bf7f0ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_462d056452a55f23f86ace3aaf117346 = $(`<div id="html_462d056452a55f23f86ace3aaf117346" style="width: 100.0%; height: 100.0%;"><b>Name:</b> NRG Stadium<br><b>Address:</b> Nrg Park, Houston, Tx, 77054, Usa, Houston</div>`)[0];
+                popup_e5960f1638cb50c1bc69b7901bf7f0ca.setContent(html_462d056452a55f23f86ace3aaf117346);
+            
+        
+
+        marker_1137f7d52decf756d48eab093b88d0f6.bindPopup(popup_e5960f1638cb50c1bc69b7901bf7f0ca)
+        ;
+
+        
+    
+    
+            marker_1137f7d52decf756d48eab093b88d0f6.bindTooltip(
+                `<div>
+                     NRG Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f720dd21cbbe8fee87683a9e9628751 = L.marker(
+                [39.051430979302, -94.492721014886],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_56dc04484cd5a5d0bf746649259c1b49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0f720dd21cbbe8fee87683a9e9628751.setIcon(icon_56dc04484cd5a5d0bf746649259c1b49);
+        
+    
+        var popup_07a6388b7b4a9daacdc6f10d3686d0c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7880a7624cdf559e435ceb05f86f8bf8 = $(`<div id="html_7880a7624cdf559e435ceb05f86f8bf8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> GEHA Field at Arrowhead Stadium<br><b>Address:</b> 1 Arrowhead Dr, Kansas City, Mo, 64129, Usa, Kansas City</div>`)[0];
+                popup_07a6388b7b4a9daacdc6f10d3686d0c9.setContent(html_7880a7624cdf559e435ceb05f86f8bf8);
+            
+        
+
+        marker_0f720dd21cbbe8fee87683a9e9628751.bindPopup(popup_07a6388b7b4a9daacdc6f10d3686d0c9)
+        ;
+
+        
+    
+    
+            marker_0f720dd21cbbe8fee87683a9e9628751.bindTooltip(
+                `<div>
+                     GEHA Field at Arrowhead Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec56b9f9f8287f7a2799ad9ffa0b129e = L.marker(
+                [33.954948817929, -118.337495070055],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_08c574e90830907ac43238260b322d3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ec56b9f9f8287f7a2799ad9ffa0b129e.setIcon(icon_08c574e90830907ac43238260b322d3a);
+        
+    
+        var popup_ef68d5c1364a700625253c14348de66b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f17a5a0598caf54e186c9b5aca69f560 = $(`<div id="html_f17a5a0598caf54e186c9b5aca69f560" style="width: 100.0%; height: 100.0%;"><b>Name:</b> SoFi Stadium<br><b>Address:</b> 1001 S Stadium Dr, Inglewood, Ca, 90305, Usa, Inglewood</div>`)[0];
+                popup_ef68d5c1364a700625253c14348de66b.setContent(html_f17a5a0598caf54e186c9b5aca69f560);
+            
+        
+
+        marker_ec56b9f9f8287f7a2799ad9ffa0b129e.bindPopup(popup_ef68d5c1364a700625253c14348de66b)
+        ;
+
+        
+    
+    
+            marker_ec56b9f9f8287f7a2799ad9ffa0b129e.bindTooltip(
+                `<div>
+                     SoFi Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5e91a1427dc7d6ea4b08c26b4eee9f24 = L.marker(
+                [25.957949010636, -80.239287037514],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_36862301e3518a5eac9117f7df944a1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e91a1427dc7d6ea4b08c26b4eee9f24.setIcon(icon_36862301e3518a5eac9117f7df944a1a);
+        
+    
+        var popup_dd631ceae5234b18bdc9aac2991d1829 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba1047f454151d6356b78886467e4eb8 = $(`<div id="html_ba1047f454151d6356b78886467e4eb8" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Hard Rock Stadium<br><b>Address:</b> 347 Don Shula Dr, Miami Gardens, Fl, 33056, Usa, Miami Gardens</div>`)[0];
+                popup_dd631ceae5234b18bdc9aac2991d1829.setContent(html_ba1047f454151d6356b78886467e4eb8);
+            
+        
+
+        marker_5e91a1427dc7d6ea4b08c26b4eee9f24.bindPopup(popup_dd631ceae5234b18bdc9aac2991d1829)
+        ;
+
+        
+    
+    
+            marker_5e91a1427dc7d6ea4b08c26b4eee9f24.bindTooltip(
+                `<div>
+                     Hard Rock Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f43a1fccd9430dae1381e1120b63a74 = L.marker(
+                [40.814842656374, -74.078364778594],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_aa35b716d1ba7926c41bd233e9e8412f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5f43a1fccd9430dae1381e1120b63a74.setIcon(icon_aa35b716d1ba7926c41bd233e9e8412f);
+        
+    
+        var popup_69ea628d02db07166c476a822ff3c700 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eaf7d2583df4174a501ef37270d3fdaf = $(`<div id="html_eaf7d2583df4174a501ef37270d3fdaf" style="width: 100.0%; height: 100.0%;"><b>Name:</b> MetLife Stadium<br><b>Address:</b> 1 Metlife Stadium Dr, East Rutherford, Nj, 07073, Usa, East Rutherford</div>`)[0];
+                popup_69ea628d02db07166c476a822ff3c700.setContent(html_eaf7d2583df4174a501ef37270d3fdaf);
+            
+        
+
+        marker_5f43a1fccd9430dae1381e1120b63a74.bindPopup(popup_69ea628d02db07166c476a822ff3c700)
+        ;
+
+        
+    
+    
+            marker_5f43a1fccd9430dae1381e1120b63a74.bindTooltip(
+                `<div>
+                     MetLife Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6d8a47f89a490145bdbee5fa4cc80270 = L.marker(
+                [39.901854013978, -75.16722199282],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_411b5e2bcb13834fe07d68e334a1b16e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d8a47f89a490145bdbee5fa4cc80270.setIcon(icon_411b5e2bcb13834fe07d68e334a1b16e);
+        
+    
+        var popup_935b80f9c3a231f6f995a03febff6fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd7b3d3cc69a96b876a6e22a596b1e5d = $(`<div id="html_dd7b3d3cc69a96b876a6e22a596b1e5d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Lincoln Financial Field<br><b>Address:</b> 1 Lincoln Financial Field Way, Philadelphia, Pa, 19148, Usa, Philadelphia</div>`)[0];
+                popup_935b80f9c3a231f6f995a03febff6fb3.setContent(html_dd7b3d3cc69a96b876a6e22a596b1e5d);
+            
+        
+
+        marker_6d8a47f89a490145bdbee5fa4cc80270.bindPopup(popup_935b80f9c3a231f6f995a03febff6fb3)
+        ;
+
+        
+    
+    
+            marker_6d8a47f89a490145bdbee5fa4cc80270.bindTooltip(
+                `<div>
+                     Lincoln Financial Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67eba22354e6ac3526d6440965fab4ce = L.marker(
+                [37.403158008774, -121.96974199357],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_1c0a5a5156080976c5a02728e63c27b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67eba22354e6ac3526d6440965fab4ce.setIcon(icon_1c0a5a5156080976c5a02728e63c27b0);
+        
+    
+        var popup_f569daa30ec5b04ac2c9b7083a0229e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38ad838cb99bb6263b025dd6510de2e0 = $(`<div id="html_38ad838cb99bb6263b025dd6510de2e0" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Levi's Stadium<br><b>Address:</b> 4900 Marie P Debartolo Way, Santa Clara, Ca, 95054, Usa, Santa Clara</div>`)[0];
+                popup_f569daa30ec5b04ac2c9b7083a0229e2.setContent(html_38ad838cb99bb6263b025dd6510de2e0);
+            
+        
+
+        marker_67eba22354e6ac3526d6440965fab4ce.bindPopup(popup_f569daa30ec5b04ac2c9b7083a0229e2)
+        ;
+
+        
+    
+    
+            marker_67eba22354e6ac3526d6440965fab4ce.bindTooltip(
+                `<div>
+                     Levi's Stadium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ba526dc8e1d14e660e959fd75ad305cf = L.marker(
+                [47.594548998212, -122.331612977354],
+                {}
+            ).addTo(map_c7d8a014b02672dfa4a8af3bba6359f4);
+        
+    
+            var icon_a6d270315b542bb04e759673bba41171 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ba526dc8e1d14e660e959fd75ad305cf.setIcon(icon_a6d270315b542bb04e759673bba41171);
+        
+    
+        var popup_78c03a8e6ecf31d1ea9b44d3b58b9890 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d98020538fe2ef9e90b901edd4dbd46d = $(`<div id="html_d98020538fe2ef9e90b901edd4dbd46d" style="width: 100.0%; height: 100.0%;"><b>Name:</b> Lumen Field<br><b>Address:</b> 800 Occidental Ave S, Seattle, Wa, 98134, Usa, Seattle</div>`)[0];
+                popup_78c03a8e6ecf31d1ea9b44d3b58b9890.setContent(html_d98020538fe2ef9e90b901edd4dbd46d);
+            
+        
+
+        marker_ba526dc8e1d14e660e959fd75ad305cf.bindPopup(popup_78c03a8e6ecf31d1ea9b44d3b58b9890)
+        ;
+
+        
+    
+    
+            marker_ba526dc8e1d14e660e959fd75ad305cf.bindTooltip(
+                `<div>
+                     Lumen Field
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
